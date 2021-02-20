@@ -1,0 +1,208 @@
+/* Start Global*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: #1f253d;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+}
+
+h2,
+nav,
+footer {
+  animation-name: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/*End global*/
+/*Start nav bar*/
+h2 {
+  color: #d2d2d2;
+  text-align: center;
+}
+
+nav {
+  margin-bottom: 25px;
+  background: #394264;
+  border-radius: 5px;
+  height: 77px;
+}
+
+nav .links {
+  margin-left: 10%;
+  font-weight: normal;
+}
+
+nav .links li {
+  position: relative;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  display: inline-block;
+}
+
+nav .links li a {
+  padding: 0 27px;
+  display: block;
+  line-height: 73px;
+  font-size: 17px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+nav .links li a:hover {
+  background: #50597b;
+  border-bottom: 4px solid #11a8ab;
+  text-decoration: none;
+}
+
+nav .links .Services:hover {
+  border-bottom: none;
+}
+
+nav .links li.active a {
+  color: #fff;
+  background-color: #018b8d;
+  border-bottom: 4px solid #018b8d;
+}
+
+/*End Nav Bar*/
+
+/* Start menu*/
+.menu {
+  position: relative;
+}
+
+.menu .sub-menu {
+  position: absolute;
+  left: -262%;
+  width: 823%;
+  background-color: #50597b;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 4px;
+  display: none;
+}
+
+.menu .sub-menu h2 {
+  display: block;
+  line-height: 60px;
+  margin: -10px;
+  text-align: center;
+
+  background-color: #11a8ab;
+  width: 102.2%;
+  color: #fff;
+  margin-bottom: 30px;
+  animation: none;
+}
+
+.menu .sub-menu .category {
+  display: inline-block;
+  width: 20.7%;
+  margin-left: 4%;
+}
+
+.menu .sub-menu .category h3 {
+  color: #afafaf;
+}
+
+.menu .sub-menu .category li {
+  display: block !important;
+}
+
+.menu .sub-menu .category li a {
+  padding: 0 25px;
+}
+
+.menu .sub-menu .category li a:hover {
+  background: #394264;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.menu .sub-menu:before {
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #11a8ab;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 37%;
+  top: -6px;
+}
+
+.menu:hover .sub-menu {
+  display: block;
+}
+
+/*End Menu*/
+/* Start Footer*/
+footer {
+  text-align: center;
+  color: #cecece;
+  margin-top: 67%;
+}
+
+/*End Footer*/
+/*Start Animation*/
+
+@keyframes heading {
+  0% {
+    transform: translateY(-100px);
+  }
+}
+
+/*End Animation*/
+/* Start My Framework*/
+.container {
+  font-family: "Ubuntu", sans-serif;
+  width: 950px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.resp-p {
+  line-height: 1.8;
+  font-size: 22px;
+}
+
+.resp-img {
+  width: 100%;
+}
+
+.classic-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*End my freame work*/
